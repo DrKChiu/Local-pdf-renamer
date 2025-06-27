@@ -20,7 +20,8 @@ def sanitize_filename(filename):
         return ""
     # Remove any characters that are not alphanumeric, an underscore, a hyphen, a period, or a space.
     # We keep spaces here, and handle underscore replacement separately for the title part.
-    filename = re.sub(r'[^\w.-]', '_', filename)
+    filename = re.sub(r'[^
+\w.-]', '_', filename)
     filename = re.sub(r'_+', '_', filename).strip('_')
     return filename
 
@@ -57,7 +58,7 @@ def extract_info_from_text(pdf_path):
     Extracts author, title, and year from the text content of the first few pages.
     Tries PyPDF2 first, then falls back to OCR if text extraction is poor.
     """
-    text = ""
+    text = """"
     try:
         with open(pdf_path, 'rb') as pdf_file:
             pdf_reader = PdfReader(pdf_file)
