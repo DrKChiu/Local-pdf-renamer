@@ -75,4 +75,4 @@ Feel free to fork this repository, make improvements, and submit pull requests!
 
 ## License
 
-[Choose a license, e.g., MIT, Apache 2.0, etc. and add it here.]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
