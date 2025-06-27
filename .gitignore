@@ -27,5 +27,4 @@ venv/
 .DS_Store
 thumbs.db
 
-# My script
-rename_pdfs.py
+
