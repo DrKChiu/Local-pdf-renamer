@@ -1,0 +1,21 @@
+participant_id,timestamp,prompt_id,prompt_text,response_text,session_id
+P001,2024-01-15 09:30:00,W001,How are you feeling right now?,"I'm feeling quite anxious about my upcoming presentation at work. I keep thinking about all the things that could go wrong.",1
+P001,2024-01-15 14:15:00,W002,What thoughts are going through your mind?,"Just had lunch but I can't stop worrying about whether I said something wrong to my colleague earlier. My mind keeps replaying the conversation.",2
+P001,2024-01-15 19:45:00,W003,Describe your current emotional state,"Feeling relaxed now, watching TV with my partner. It's nice to just unwind after a long day.",3
+P002,2024-01-15 10:20:00,W001,How are you feeling right now?,"I'm doing well today. Had a good breakfast and looking forward to meeting friends later.",4
+P002,2024-01-15 15:30:00,W002,What thoughts are going through your mind?,"Concerned about my mom's health. She's been having some issues and I can't help but worry about her test results coming back next week.",5
+P002,2024-01-15 20:10:00,W003,Describe your current emotional state,"Had a great evening with friends. Feeling grateful and content. Sometimes good company is all you need.",6
+P003,2024-01-16 08:45:00,W001,How are you feeling right now?,"Woke up feeling stressed. I have so much on my plate today and I'm worried I won't get everything done. The deadline for my project is approaching fast.",7
+P003,2024-01-16 13:20:00,W002,What thoughts are going through your mind?,"Taking a quick break from work. Actually feeling pretty productive today. Got through most of my to-do list.",8
+P003,2024-01-16 18:00:00,W003,Describe your current emotional state,"Exhausted but accomplished. Managed to finish the project on time. Relief is the main emotion right now.",9
+P001,2024-01-16 09:15:00,W004,What's on your mind today?,"I keep obsessing over that email I sent yesterday. What if I came across as too direct? I'm worried my boss thinks I'm being difficult.",10
+P001,2024-01-16 16:30:00,W005,How would you describe your mood?,"Feeling better now. Had a good conversation with my boss and cleared things up. Sometimes I create problems in my head that don't really exist.",11
+P004,2024-01-16 11:00:00,W001,How are you feeling right now?,"Nervous about my doctor's appointment tomorrow. I know it's just a routine check-up but I always get anxious about medical visits.",12
+P004,2024-01-16 17:45:00,W002,What thoughts are going through your mind?,"Can't stop thinking about climate change and the future of our planet. It feels overwhelming sometimes, like nothing I do matters.",13
+P005,2024-01-17 07:30:00,W001,How are you feeling right now?,"Good morning! Feeling energetic and ready for the day. Slept well and had a nice cup of coffee.",14
+P005,2024-01-17 12:45:00,W002,What thoughts are going through your mind?,"Enjoying my lunch break in the park. It's sunny and peaceful. Sometimes it's the simple moments that bring the most joy.",15
+P002,2024-01-17 14:20:00,W004,What's on your mind today?,"Mom's test results came back normal! Such a relief. I was losing sleep over it but everything turned out fine.",16
+P003,2024-01-17 10:10:00,W005,How would you describe your mood?,"Feeling confident today. Starting a new project and I'm excited about the challenges ahead. Ready to tackle whatever comes my way.",17
+P004,2024-01-17 16:15:00,W003,Describe your current emotional state,"Doctor's appointment went well yesterday but now I'm worried about my finances. Medical bills are piling up and I'm not sure how I'll manage.",18
+P006,2024-01-18 09:00:00,W001,How are you feeling right now?,"Feeling overwhelmed with my course load. Exams are coming up and I'm worried I haven't studied enough. So much material to cover.",19
+P006,2024-01-18 21:30:00,W002,What thoughts are going through your mind?,"Spent the whole day studying. Feel more prepared now but still anxious about tomorrow's exam. Hope all this effort pays off.",20

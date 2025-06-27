@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: EMA Worry Analysis Framework
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: [Your First Name]
+    family-names: [Your Last Name]
+    email: [Your Email]
+    orcid: [Your ORCID if available]
+repository-code: "[Your GitHub Repository URL]"
+abstract: >-
+  A comprehensive framework for analyzing Ecological Momentary Assessment (EMA) 
+  text data to detect worry patterns using medGemma AI model. This tool processes 
+  m-path software exports and provides automated worry classification with 
+  statistical analysis and visualization capabilities.
+keywords:
+  - EMA
+  - Ecological Momentary Assessment
+  - Worry Analysis
+  - Mental Health
+  - medGemma
+  - Natural Language Processing
+  - Psychology
+  - Digital Health
+license: MIT
+version: 1.0.0
+date-released: '2024-12-27'

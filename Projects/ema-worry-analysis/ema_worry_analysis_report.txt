@@ -1,0 +1,24 @@
+EMA WORRY ANALYSIS REPORT
+Generated: 2025-06-27 17:06:19
+Model: medgemma-27b-text-it-mlx
+
+DATASET SUMMARY:
+- Total responses: 20
+- Unique participants: 6
+- Responses with worry: 12 (60.0%)
+- Average text length: 121.8 characters
+
+PER-PARTICIPANT STATISTICS:
+                Total_Responses  Worry_Count  Worry_Rate
+participant_id                                          
+P001                          5            4        0.80
+P002                          4            2        0.50
+P003                          4            1        0.25
+P004                          3            3        1.00
+P005                          2            0        0.00
+P006                          2            2        1.00
+
+FILES GENERATED:
+- Detailed results: ema_worry_analysis_results.csv
+- Visualizations: ema_worry_analysis_plots.png
+- Summary report: ema_worry_analysis_report.txt
