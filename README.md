@@ -48,20 +48,24 @@ This Python script helps you batch rename PDF files in a directory based on thei
 
 ## Usage
 
-1.  **Place the `rename_pdfs.py` script in the directory containing your PDF files.**
-2.  **Open your terminal or command prompt.**
-3.  **Navigate to the directory where your PDFs and the script are located:**
+1. **Place the `rename_pdfs.py` script in the directory containing your PDF files, or specify a directory path.**
+2. **Open your terminal or command prompt.**
+3. **Navigate to the directory where your PDFs and the script are located:**
     ```bash
     cd /path/to/your/pdf/folder
     ```
     (Replace `/path/to/your/pdf/folder` with the actual path to your PDF files.)
 
-4.  **Run the script:**
+4. **Run the script:**
     ```bash
+    # Rename PDFs in the current directory
     python3 rename_pdfs.py
+    
+    # Rename PDFs in a specific directory
+    python3 rename_pdfs.py /path/to/your/pdf/folder
     ```
 
-The script will scan for PDF files in the current directory and attempt to rename them. Output messages will indicate which files were renamed or if any errors occurred.
+The script will scan for PDF files in the specified directory and attempt to rename them. Output messages will indicate which files were renamed or if any errors occurred.
 
 ## Important Notes
 

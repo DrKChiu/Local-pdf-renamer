@@ -1,5 +1,6 @@
 import os
 import re
+import argparse
 from PyPDF2 import PdfReader
 from PyPDF2.errors import PdfReadError
 
@@ -247,14 +248,16 @@ def rename_pdfs_in_directory(directory_path):
 
 
 if __name__ == "__main__":
-    # Use the specific directory path provided by the user
-    articles_directory = "/Users/kc/Desktop/2025 MRC and NIHR fellowship application/Articles"
-    
+    import argparse
+    parser = argparse.ArgumentParser(description='Rename PDF files based on their metadata and content.')
+    parser.add_argument('directory', nargs='?', default='.', 
+                       help='Directory containing PDF files to rename (default: current directory)')
+    args = parser.parse_args()
+    articles_directory = os.path.abspath(args.directory)
     if not os.path.exists(articles_directory):
-        print(f"Articles directory not found at: {articles_directory}")
+        print(f"Directory not found: {articles_directory}")
         exit(1)
-    
-    print(f"Processing PDFs in Articles directory: {articles_directory}")
+    print(f"Processing PDFs in directory: {articles_directory}")
     rename_pdfs_in_directory(articles_directory)
 
 print("PDF renaming process complete!")
