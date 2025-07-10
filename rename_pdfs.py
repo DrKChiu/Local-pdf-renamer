@@ -165,11 +165,18 @@ def extract_info_from_text(pdf_path):
 def rename_pdfs_in_directory(directory_path):
     """
     Renames all PDF files in a given directory based on their metadata or text content.
+    Failed PDFs are moved to a 'failed' subdirectory.
     """
     print(f"Scanning for PDF files in: {directory_path}")
     pdf_files = [f for f in os.listdir(directory_path) if f.lower().endswith('.pdf')]
     total_pdfs = len(pdf_files)
     failed_pdfs = 0
+
+    # Create failed directory if it doesn't exist
+    failed_dir = os.path.join(directory_path, "failed")
+    if not os.path.exists(failed_dir):
+        os.makedirs(failed_dir)
+        print(f"Created failed directory: {failed_dir}")
 
     for filename in pdf_files:
         if filename.lower().endswith('.pdf'):
@@ -236,8 +243,22 @@ def rename_pdfs_in_directory(directory_path):
 
             except PdfReadError as e:
                 print(f"Could not read PDF content for '{filename}' (possibly corrupted or encrypted): {e}")
+                # Move failed PDF to failed directory
+                failed_filepath = os.path.join(failed_dir, filename)
+                try:
+                    os.rename(old_filepath, failed_filepath)
+                    print(f"Moved '{filename}' to failed directory")
+                except Exception as move_error:
+                    print(f"Could not move '{filename}' to failed directory: {move_error}")
             except Exception as e:
                 print(f"Could not process '{filename}': {e}")
+                # Move failed PDF to failed directory
+                failed_filepath = os.path.join(failed_dir, filename)
+                try:
+                    os.rename(old_filepath, failed_filepath)
+                    print(f"Moved '{filename}' to failed directory")
+                except Exception as move_error:
+                    print(f"Could not move '{filename}' to failed directory: {move_error}")
             
             if not processed_successfully:
                 failed_pdfs += 1
@@ -245,6 +266,8 @@ def rename_pdfs_in_directory(directory_path):
     if total_pdfs > 0:
         failure_percentage = (failed_pdfs / total_pdfs) * 100
         print(f"Failed to process {failed_pdfs} out of {total_pdfs} PDFs ({failure_percentage:.2f}% failure rate).")
+        if failed_pdfs > 0:
+            print(f"Failed PDFs have been moved to: {failed_dir}")
 
 
 if __name__ == "__main__":
