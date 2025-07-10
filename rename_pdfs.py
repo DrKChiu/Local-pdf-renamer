@@ -164,10 +164,16 @@ def extract_info_from_text(pdf_path):
 
 def rename_pdfs_in_directory(directory_path):
     """
-    Renames all PDF files in a given directory based on their metadata or text content.
+    Renames all PDF files in a given directory based on their metadata and content.
     Failed PDFs are moved to a 'failed' subdirectory.
     """
     print(f"Scanning for PDF files in: {directory_path}")
+    print("\n" + "="*60)
+    print("⚠️  LEGAL NOTICE: This tool is for personal research use only.")
+    print("   Users must have lawful access to PDFs and comply with copyright laws.")
+    print("   See LEGAL_NOTICE.md for full details.")
+    print("="*60 + "\n")
+    
     pdf_files = [f for f in os.listdir(directory_path) if f.lower().endswith('.pdf')]
     total_pdfs = len(pdf_files)
     failed_pdfs = 0

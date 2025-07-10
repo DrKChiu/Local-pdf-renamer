@@ -2,12 +2,32 @@
 
 This Python script helps you batch rename PDF files in a directory based on their metadata (author, title, and publication year). If metadata is missing or insufficient, it attempts to extract information from the text content of the first few pages, falling back to OCR (Optical Character Recognition) for scanned or image-based PDFs.
 
+## ⚠️ **IMPORTANT LEGAL NOTICE**
+
+**This tool is for personal research and academic use only. Users must comply with all applicable copyright laws and publisher terms of service.**
+
+### **Legal Requirements:**
+- **Lawful Access Required**: You must have lawful access to any PDFs you process with this tool
+- **Non-Commercial Use Only**: This tool is intended for personal research, not commercial purposes
+- **Respect Copyright**: Do not use this tool to process PDFs you do not have permission to access
+- **Publisher Terms**: Check individual journal/publisher terms of service before use
+- **User Responsibility**: Users are responsible for ensuring their use complies with applicable laws
+
+### **What This Tool Does:**
+- Extracts metadata (author, title, year) from PDFs you own or have lawful access to
+- Renames files for personal organization
+- **Does NOT** extract or reproduce substantial content from PDFs
+- **Does NOT** facilitate bulk processing of protected works without permission
+
+**For full legal details, see [LEGAL_NOTICE.md](LEGAL_NOTICE.md)**
+
 ## Features
 
 - Renames PDFs to `Author_Title(PublicationYear).pdf` format.
 - Uses "UnknownAuthor", "UnknownTitle", or "UnknownYear" as placeholders if information is not found.
 - Sanitizes filenames to remove invalid characters and replaces spaces with underscores.
 - **OCR Support:** Automatically attempts OCR for PDFs where text extraction is poor or absent, enabling renaming of scanned documents.
+- **Failed PDF Management:** Moves unprocessable PDFs to a "failed" subdirectory for manual review.
 
 ## Requirements
 
